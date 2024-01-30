@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cancel</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body style="background-color: #22a6b3;">
+<!--head-->
+<div class="row" style="background: #006266; box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);">
+  <div class="col-sm-9 p-3" style="font-size: 20px; color: white;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="arrow" viewBox="0 0 16 16" style="margin-left: 10px;">
+      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+    </svg>&nbsp;&nbsp;&nbsp;
+     <a class="navbar-brand" href="#"><img src="img/hpt.png" width="50" height="50"><b> LAMPANG HOSPITAL</b></a>
+  </div>
+<!--รูปโปรไฟล์-->            
+  <div class="card col-sm-1 p-3" style="background-color: #006266; border: none;">
+    <a class="navbar-brand" onclick="menuToggle();"><img src="img/pro.jpg" width="50" height="50" style="position: relative; left: 40px;"></a>
+<div class="menu">
+    <h3>Admin<br><span>งานเทคโนโลยีสารสนเทศ</span></h3>
+    <ul1>
+        <li1><img src="img/frofile.png"><a href="profile.html">แก้ไขข้อมูลส่วนตัว และการตั้งค่า LineNotify</a></li1>
+        <li1><img src="img/out.png"><a href="login.html">ออกจากระบบ</a><li></li>
+    </ul1>
+</div>
+</div>
+<script>
+function menuToggle(){
+    const toggleMenu = document.querySelector('.menu');
+    toggleMenu.classList.toggle('active')
+}
+</script>
+<div class="col-sm-2 p-3" style="font-size: 14px; color: white;">
+    <div class="row">
+        <div class="col-md-12">
+            <b>Admin</b>
+        </div> 
+    </div>
+    <div class="row">
+        <div class=" col-md-12">
+            <b>งานเทคโนโลยีสารสนเทศ</b>
+        </div>
+    </div> 
+</div>
+</div>
+</div>
+<!--css-->
+<style>
+  .card .menu{
+  position: absolute;
+  top: 78px;
+  float: right;
+  margin-left: 30px;
+  padding: 20px 20px;
+  background: #e8fdff;
+  width: 250px;
+  box-sizing: 0 5px 25px grab(0,0,0,0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  }
+  .card .menu.active{
+  visibility: visible;
+  opacity: 1;
+  }
+  .card .menu h3{
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px 0;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2em;
+  }
+  .card .menu ul1 li1 {
+  list-style: none;
+  padding: 10px 0;
+  border-top:1px solid rgba(0, 0, 0, 0.05) ;
+  display: flex;
+  align-items: center;
+
+  }
+  .card .menu ul1 li1 img{
+  max-width: 30px;
+  margin-right: 20px;
+  opacity: 0.5;
+  transition: 0.5s;
+  }
+  .card .menu ul1 li1:hover img{
+  opacity: 1;
+  }
+  .card .menu ul1 li1 a{
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: 0.5s;
+  }
+  .card .menu ul1 li1:hover a{
+  color: #FC427B;
+  }
+</style>
+<!--แบบฟอร์ม-->
+<div class="row" style="margin-top: 20px; margin-left: 20px;">
+  <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8" style="background-color: #ffffff; height: 100vh; overflow: auto;">
+    <div class="row">
+      <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <br><img src="img/hpt lp.png" width="190" height="65">
+      </div>
+      <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8" style="margin-top: 63px; font-size: 18px;">
+        <b>แบบฟอร์มขอรับการสนับสนุนจากงานเทคโนโลยีสารสนเทศ</b>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 70px;">
+      <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+        <div class="row" style="margin-left: 10px;">
+          <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <b>จากหน่วยงาน</b>
+          </div>
+          <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+            พยาธิวิทยากายวิภาค
+          </div>
+        </div>
+      </div>
+      <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="row">
+          <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <b>โทร</b>
+          </div>
+          <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+            1112
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+        <div class="row" style="margin-left: 10px;">
+          <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <b>เลขที่คำขอ</b>
+          </div>
+          <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+            2024-01-25-001
+          </div>
+        </div>
+      </div>
+      <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="row">
+          <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+            <b>วันที่ยื่นคำขอ</b>
+          </div>
+          <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+            25 มกราคม 2567
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="row" style="margin-left: 10px;">
+          <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <b>มีความประสงค์</b>
+          </div>
+          <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+            ประชาสัมพันธ์ข้อมูลผ่านระบบ Internet/Intranet โดยผู้ขอรับการสนับสนุนยินยอมให้เปิดเผยข้อมูลดังกล่าวต่อสาธารณชนได้
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="row" style="margin-left: 10px;">
+          <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <b>โดยมีรายละเอียด ดังนี้</b>
+          </div>
+          <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+            ขอประชาสัมพันธ์ในโปรแกรม SSB เรื่องงดนัดหมายการส่งชิ้นเนื้อปรึกษาระหว่างการผ่าตัด(Frozen Section) 
+            ในวันศุกร์ ที่ 26 มกราคม 2567 เนื่องจากปิดและซ่อมบำรุงรักษาเครื่อง
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 100px; margin-left: 10px; font-size: 14px; color: red;">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <img src="img/clip.png" width="30" height="30"><b>มีไฟล์แนบด้านล่าง</b>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 40px;">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="row" style="margin-left: 10px;">
+          <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <b>วันที่กำหนดส่ง</b>
+          </div>
+          <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+            1 กุมภาพันธ์ 2567
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 150px;">
+      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="row" style="margin-left: 10px;">
+          <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <b>ผู้ยื่นคำขอ</b>
+          </div>
+          <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+            น.ต. พ.ญ.เพลินพิศ ประสพโชค ร.น.
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="row">
+          <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <b>ผู้รับงาน/คำขอ</b>
+          </div>
+          <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+            ธราธิป ธิซาว
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 70px; margin-left: 10px;">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <b>ไฟล์แนบ</b>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="row" style="margin-left: 10px;">
+          <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+            หนังสือแสดงความยินยอมให้เปิดเผยข้อมูล.pdf
+          </div>
+          <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <button type="button" class="btn" style="background-color: rgb(91, 91, 91); width: 60%;height: 35px; color: #f4f2f2;">PDF View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="row" style="margin-top: 30px; margin-left: 10px;">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <b>ไฟล์แนบ 2</b>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 10px;">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="row">
+          <div class="col">
+            ไม่พบไฟล์แนบใดๆ
+          </div>
+        </div>
+      </div>
+    </div><br><br><br>
+
+  </div>
+
+<!--ส่งต่อคำขอ-->
+  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" style="background-color: #22a6b3;">
+    <div class="row" style="margin-left: 5px;">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <button type="button" class="btn" style="background-color: #f6bc00; width: 75%; color: #000000; margin-left: 50px; margin-top: 20px; box-shadow: 0 3px 5px rgba(0, 0, 0, .3);"><b>ขอยกเลิกคำขอ</b></button>
+    </div>
+    </div>
+  </div>
+
+<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script-->
+</body>
+</html>

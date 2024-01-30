@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home page</title>
+    <link rel="icon" type="imge/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/font.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body style="justify-content: center; align-items: center; min-height: 100vh; width: 100%; background-color: #22a6b3;">
+
+    <div class="row" style="background: #006266; box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);">
+            <div class="col-sm-3 p-3" style="font-size: 20px; color: white;">
+               <a class="navbar-brand" href="#"><img src="img/hpt.png" width="50" height="50"><b> LAMPANG HOSPITAL</b></a>
+            </div>
+            <div class="nav col-sm-6 p-3" style="align-items: center; font-size: 17.7px; color: white;">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="home.html"><b>หน้าหลัก</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="myjob.html"><b>งานของฉัน</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="signature.html"><b>ลายเซ็นอิเล็กทรอนิกส์</b></a>
+                </li>
+                <li class="dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="javascript:void(0)" class="dropbtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <b>ภาระงาน</b>
+                  </a>
+                  <div class="dropdown-content">
+                    <a class="dropdown-item" href="workload.html"><b>ภาระงานตนเอง</b></a>
+                    <a class="dropdown-item" href="agency.html"><b>ภาระงานในหน่วยงาน</b></a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="report.html"><b>รายงาน</b></a>
+                </li>
+            </div>
+<!--รูปโปรไฟล์-->            
+      <div class="card col-sm-1 p-3" style="background-color: #006266; border: none;">
+        <a class="navbar-brand" onclick="menuToggle();"><img src="img/pro.jpg" width="50" height="50" style="position: relative; left: 40px;"></a>
+      <div class="menu">
+        <h3>Admin<br><span>งานเทคโนโลยีสารสนเทศ</span></h3>
+        <ul1>
+            <li1><img src="img/frofile.png"><a href="profile.html">แก้ไขข้อมูลส่วนตัว และการตั้งค่า LineNotify</a></li1>
+            <li1><img src="img/out.png"><a href="login.html">ออกจากระบบ</a><li></li>
+        </ul1>
+      </div>
+      </div>
+      <script>
+      function menuToggle(){
+          const toggleMenu = document.querySelector('.menu');
+          toggleMenu.classList.toggle('active')
+      }
+      </script>
+      <div class="col-sm-2 p-3" style="font-size: 14px; color: white;">
+        <div class="row">
+            <div class="col-md-12">
+                <b>Admin</b>
+            </div> 
+        </div>
+        <div class="row">
+            <div class=" col-md-12">
+                <b>งานเทคโนโลยีสารสนเทศ</b>
+            </div>
+        </div> 
+      </div>
+    </div>
+    </div>
+<!--css-->
+      <style>
+      .card .menu{
+      position: absolute;
+      top: 78px;
+      float: right;
+      margin-left: 30px;
+      padding: 20px 20px;
+      background: #e8fdff;
+      width: 250px;
+      box-sizing: 0 5px 25px grab(0,0,0,0.1);
+      border-radius: 15px;
+      transition: 0.5s;
+      visibility: hidden;
+      opacity: 0;
+      }
+      .card .menu.active{
+      visibility: visible;
+      opacity: 1;
+      }
+      .card .menu h3{
+      width: 100%;
+      text-align: center;
+      font-size: 17px;
+      padding: 10px 0;
+      font-weight: 500;
+      color: #000;
+      line-height: 1.2em;
+      }
+      .card .menu ul1 li1 {
+      list-style: none;
+      padding: 10px 0;
+      border-top:1px solid rgba(0, 0, 0, 0.05) ;
+      display: flex;
+      align-items: center;
+
+      }
+      .card .menu ul1 li1 img{
+      max-width: 30px;
+      margin-right: 20px;
+      opacity: 0.5;
+      transition: 0.5s;
+      }
+      .card .menu ul1 li1:hover img{
+      opacity: 1;
+      }
+      .card .menu ul1 li1 a{
+      display: inline-block;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      transition: 0.5s;
+      }
+      .card .menu ul1 li1:hover a{
+      color: #FC427B;
+      }
+
+      li a, .dropbtn {
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+      li.dropdown {
+      display: inline-block;
+      }
+      .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #006266;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      }
+      .dropdown-content a {
+      color: rgb(255, 255, 255);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      }
+      .dropdown-content a:hover {background-color: #01a3a4;}
+      .dropdown:hover .dropdown-content {
+       display: block;
+      }
+      </style>
+<!--สร้างคำขอสนับสนุน-->
+    <div class="row" style="padding: 0.2cm 0.3cm;">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" style="text-align: center;">
+            <button type="button" class="btn" style="background-color: #97ff06; box-shadow: 0 3px 5px rgba(0, 0, 0, .3); width: 100%; margin-top: 20px; margin-bottom: 30px;" onclick="document.location = 'EX10.html'"><b>สร้างคำขอสนับสนุน</b></button>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="main" style="width: 135px; margin: .2rem auto; height: 135px; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
+                <div class="text" style="height: 45px; background: #f0932b; text-align: center; font-size: 15px; padding: 15px 0;">
+                  <b>งานที่รออยู่</b>
+                </div> 
+                <div class="content" style="text-align: center; padding: 10px 0; font-size: 40px;">
+                  <b>1</b>
+                </div>
+            </div>
+          </div>
+        <div class="col-sm-6">
+          <div class="main" style="width: 135px; margin: .2rem auto; height: 135px; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
+              <div class="text" style="height: 45px; background: #fff200; text-align: center; font-size: 15px; padding: 15px 0;">
+                <b>กำลังทำ</b>
+              </div>
+              <div class="content" style="text-align: center; padding: 10px 0; font-size: 40px;">
+                <b>3</b>
+              </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="main" style="width: 135px; margin: .2rem auto; height: 135px; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
+                <div class="text" style="height: 45px; background: #6afc54; text-align: center; font-size: 15px; padding: 15px 0;">
+                  <p><b>เสร็จแล้ว</b>(เดือนนี้)</p>
+                </div>
+                <div class="content" style="text-align: center; padding: 10px 0; font-size: 40px;">
+                  <b>2</b>
+                </div>
+            </div>
+          </div>
+        <div class="col-sm-6">
+            <div class="main" style="width: 135px; margin: .2rem auto; height: 135px; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
+                <div class="text" style="height: 45px; background: #4bcffa; text-align: center; font-size: 15px; padding: 15px 0;">
+                  <b>คำขอที่ยื่นไป</b>
+                </div>
+                <div class="content" style="text-align: center; padding: 10px 0; font-size: 40px;">
+                  <b>2</b>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="col col-sm-12 col-md-3 col-lg-3">
+            <div class="main-input" style="width: 310px; margin: 1.3rem auto; height: 370px; background-color: #f1f2f6; border-radius: 8px; overflow: hidden; float: right;">
+                <div class="text" style="height: 45px; background: #f0932b; text-align: center; font-size: 15px; padding: 15px 0;">
+                  <b>แสดงงานที่รออยู่</b>
+                </div>
+                <div class="row" style="background: #dfe4ea;">
+                  <div class="col-sm-2">
+                      <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                  </div>
+                  <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
+                      <b>ขอ undo เอกสาร LIS66-1002</b><br>
+                      <b>คำขอเมื่อ:</b> 09/01/2023<br>
+                      <b>สถานะ:<a style="color: #EE5A24;"> รอทำ</a></b><br>
+                      <b>จาก:</b> กลุ่มงานยุทธศาสตร์และแผนงานโครงการ
+                  </div>
+                  <div class="col-sm-3">
+                    <img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px; margin-right: 15px;">
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col col-sm-12 col-md-3 col-lg-3">
+            <div class="main-input" style="width: 310px; margin: 1.3rem auto; height: 370px; background-color: #f1f2f6; border-radius: 8px; overflow: hidden; float: right;">
+                <div class="text" style="height: 45px; background: #fff200; text-align: center; font-size: 15px; padding: 15px 0;">
+                  <b>แสดงงานที่กำลังทำ</b>
+                </div>
+                <div class="row" style="background: #dfe4ea;">
+                  <div class="col-sm-2">
+                      <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                  </div>
+                  <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
+                      <b>ขอรายงานเงินได้ เงินหัก ประจำ</b><br>
+                      <b>คำขอเมื่อ:</b> 04/01/2023<br>
+                      <b>สถานะ:<a style="color: #fbc531;"> กำลังทำ</a></b><br>
+                      <b>จาก:</b> กลุ่มงานทรัพยากรบุคคล
+                  </div>
+                  <div class="col-sm-3">
+                      <img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px;">
+                  </div>
+                </div>
+                <div class="row" style="background: #f1f2f6;">
+                  <div class="col-sm-2">
+                      <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                  </div>
+                  <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
+                      <b>ขอรายงานการประชุม</b><br>
+                      <b>คำขอเมื่อ:</b> 15/01/2023<br>
+                      <b>สถานะ:<a style="color: #fbc531;"> กำลังทำ</a></b><br>
+                      <b>จาก:</b> กลุ่มงานเทคโนโลยีสารสนเทศ
+                  </div>
+                  <div class="col-sm-3">
+                      <img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px;">
+                  </div>
+                </div>
+                <div class="row" style="background: #dfe4ea;">
+                  <div class="col-sm-2">
+                    <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                  </div>
+                  <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
+                    <b>ขอสร้างรายงานการใช้งานโปรแกรม</b><br>
+                    <b>คำขอเมื่อ:</b> 05/12/2023<br>
+                    <b>สถานะ:<a style="color: #fbc531;"> กำลังทำ</a></b><br>
+                    <b>จาก:</b> กลุ่มการพยาบาล
+                  </div>
+                  <div class="col-sm-3">
+                      <img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px;">
+                  </div>
+            </div>          
+            </div>
+          </div>     
+
+        <div class="col col-sm-12 col-md-3 col-lg-3" >
+            <div class="main-input" style="width: 310px; margin: 1.3rem auto; height: 370px; background-color: #f1f2f6; border-radius: 8px; overflow: hidden; float: right;">
+                <div class="text" style="height: 45px; background: #4bcffa; text-align: center; font-size: 15px; padding: 15px 0;">
+                  <b>แสดงข้อมูลคำขอที่ยื่นไป</b>
+                </div>
+                <div class="row" style="background: #dfe4ea;">
+                  <div class="col-sm-2">
+                      <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                  </div>
+                  <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
+                      <b>ขอสร้างแบบฟอร์มในโปรแกรม Smart HIS IPD</b><br>
+                      <b>คำขอเมื่อ:</b> 10/12/2023<br>
+                      <b>สถานะ:<a style="color: #4bcffa;"> คำขอที่ยื่นไป</a></b><br>
+                      <b>จาก:</b> กลุ่มการพยาบาล
+                  </div>
+                  <div class="col-sm-3">
+                      <img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px;">
+                  </div>
+              </div>
+              <div class="row" style="background: #f1f2f6;">
+                  <div class="col-sm-2">
+                      <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                  </div>
+                  <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
+                      <b>แจ้งประกาศในเว็บไซต์ของโรงพยาบาลลำปาง</b><br>
+                      <b>คำขอเมื่อ:</b> 22/12/2023<br>
+                      <b>สถานะ:<a style="color: #4bcffa;"> คำขอที่ยื่นไป</a></b><br>
+                      <b>จาก:</b> กลุ่มการพยาบาล
+                  </div>
+                  <div class="col-sm-3">
+                      <img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px;">
+                  </div>
+              </div>
+              <div class="row" style="background: #dfe4ea;">
+                <div class="col-sm-2">
+                    <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                </div>
+                <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
+                    <b>ประชาสัมพันธ์ข้อมูลผ่านระบบ Internet/Intranet โดยผู้ขอรับการสนับสนุนยินยอมให้เปิดเผยข้อมูลดังกล่าวต่อสาธารณชนได้</b><br>
+                    <b>คำขอเมื่อ:</b> 25/01/2024<br>
+                    <b>สถานะ:<a style="color: #4bcffa;"> คำขอที่ยื่นไป</a></b><br>
+                    <b>จาก:</b>กลุ่มงานพยาธิวิทยากายวิภาค
+                </div>
+                <div class="col-sm-3">
+                    <a href="EX9.html"><img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px;"></a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+      
