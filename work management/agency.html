@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/font.css">
 </head>
 <body style="background-color: #22a6b3;">
-    แก้
   <div class="row" style="background: #006266; box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);">
     <div class="col-sm-3 p-3" style="font-size: 20px; color: white;">
        <a class="navbar-brand" href="#"><img src="img/hpt.png" width="50" height="50"><b> LAMPANG HOSPITAL</b></a>
@@ -29,8 +28,8 @@
               <b>ภาระงาน</b>
           </a>
           <div class="dropdown-content">
-            <a class="dropdown-item" href="#"><b>ภาระงานตนเอง</b></a>
-            <a class="dropdown-item" href="#"><b>ภาระงานในหน่วยงาน</b></a>
+            <a class="dropdown-item" href="#"><b>ภายในหน่วยงาน</b></a>
+            <a class="dropdown-item" href="#"><b>แยกหน่วยงาน</b></a>
           </div>
         </li>
         <li class="nav-item">
@@ -154,32 +153,51 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+.circled-chevron-right--v1:hover{
+     
+     transform: scale(1.3);
+     z-index: 2;
+     
+     
+}
 </style>
-
+<div class="row" style="height: 100%; margin-top: 25px;">
+    <div class="col col-sm-12 col-md-4 col-lg-4" style="text-align: right;">
+        <b for="inputState" class="form-label" style="font-size: 16px;">วันที่</b>
+        <input type="date" style="width: 50%; height: 35px; margin-left: 10px; border: 0; border-radius: 0.2em;">
+    </div>
+    <div class="col col-sm-12 col-md-4 col-lg-4" style="text-align: center">
+        <b for="inputState" class="form-label" style="font-size: 16px;">ถึงวันที่</b>
+        <input type="date" style="width: 50%; height: 35px; margin-left: 10px; border: 0; border-radius: 0.2em;">
+    </div>
+    <div class="col col-sm-12 col-md-4 col-lg-4">
+        <button type="button" class="btn" style="width: 50%; height: 35px; background-color: #97ff06; box-shadow: 0 3px 5px rgba(0, 0, 0, .3);"><b>ค้นหาข้อมูล</b></button>
+    </div>
+</div>
 <div class="row" style="height: 100vh;">
     <div class="col-sm-4">
         <div class="row" style="margin-top: 10px;">
           <table style="width: 80%; margin: auto;">
           <tr>
-            <td align="center" style="background-color: #1B1464;color: #ffffff;"><b>หน่วยงาน</b></td>
+            <td  style="background-color: #1B1464;color: #ffffff; text-align: center;" ><b>หน่วยงาน</b></td>
           </tr>
           <tr>
-            <td align="left">กลุ่มงานเภสัชกรรม<img width="35" height="35" src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" alt="circled-chevron-right--v1" align="right"></td>
+            <td style="text-align: left;">กลุ่มงานเภสัชกรรม<img width="35" height="35" src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" align="right"></td>
           </tr> 
           <tr>
-            <td align="left">กลุ่มการพยาบาล<img width="35" height="35" src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" alt="circled-chevron-right--v1" align="right"></td>
+            <td style="text-align: left;">กลุ่มการพยาบาล<img width="35" height="35" src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" align="right"></td>
           </tr>
           <tr>
-            <td align="left">กลุ่มงานทรัพยากรบุคคล<img width="35" height="35" src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" alt="circled-chevron-right--v1" align="right"></td>
+            <td style="text-align: left;">กลุ่มงานทรัพยากรบุคคล<img width="35" height="35" src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" align="right"></td>
           </tr>
           <tr>
-            <td align="left">งานเทคโนโลยีสารสนเทศ<img width="35" height="35" src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" alt="circled-chevron-right--v1" align="right"></td>
+            <td style="text-align: left;">งานเทคโนโลยีสารสนเทศ<img width="35" height="35" src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" align="right"></td>
           </tr>
           <tr>
-            <td align="left">กลุ่มงานยุทธศาสตร์และแผนงานโครงการ<img width="35" height="35" src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" alt="circled-chevron-right--v1" align="right"></td>
+            <td style="text-align: left;">กลุ่มงานยุทธศาสตร์และแผนงานโครงการ<img width="35" height="35" src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" align="right"></td>
           </tr>
           <tr>
-            <td align="left">หน่วยงานภายนอก<img width="35" height="35" src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" alt="circled-chevron-right--v1" align="right"></td>
+            <td style="text-align: left;">หน่วยงานภายนอก<img width="35" height="35" src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" align="right"></td>
           </tr>
           </table>
         </div>
@@ -189,27 +207,35 @@
   <table style="margin-top: 10px; border-collapse: collapse; width: 102%; margin-left: -40px;">
     <thead>
         <tr>
-            <th colspan="4" style="text-align: center; background-color: #1B1464; color: #ffffff;">ข้อมูลภาระงานเจ้าหน้าที่</th>
+            <th colspan="4" style="text-align: center; background-color: #1B1464; color: #ffffff;">ข้อมูลงานเทคโนโลยีสารสนเทศ</th>
         </tr>
     </thead>
     <tbody>
+        <thead>
+            <tr>
+                <th colspan="1" style="text-align: center; background-color: #6254ff; color: #000;">รายชื่อเจ้าหน้าที่</th>
+                <th colspan="1" style="text-align: center; background-color: #f0932b; color: #000;">รอทำ</th>
+                <th colspan="1" style="text-align: center; background-color: #fff200; color: #000;">กำลังทำ</th>
+                <th colspan="1" style="text-align: center; background-color: #6afc54; color: #000;">เสร็จแล้ว</th>
+            </tr>
+        </thead>
         <tr>
-            <td><img src="img/pro.jpg"; width="30" height="30" align="center">&nbsp;&nbsp;สุวนันท์ ตันแก้ว</td>
-            <td>รอทำ: 2 งาน</td>
-            <td>กำลังทำ: 2 งาน</td>
-            <td>งานที่เสร็จ(สะสม): 5 งาน</td>
+            <td style="text-align: left;"><img src="img/pro.jpg"; width="30" height="30" >&nbsp;&nbsp;สุวนันท์ ตันแก้ว</td>
+            <td>2 </td>
+            <td>2 </td>
+            <td>5 </td>
         </tr>
         <tr>
-            <td><img src="img/pro.jpg"; width="30" height="30" align="center">&nbsp;&nbsp;กวินนา อุดเครือ</td>
-            <td>รอทำ: 3 งาน</td>
-            <td>กำลังทำ: 1 งาน</td>
-            <td>งานที่เสร็จ(สะสม): 5 งาน</td>
+            <td style="text-align: left;"><img src="img/pro.jpg"; width="30" height="30" >&nbsp;&nbsp;กวินนา อุดเครือ</td>
+            <td>3 </td>
+            <td>1 </td>
+            <td>5 </td>
         </tr>
         <tr>
-            <td><img src="img/pro.jpg"; width="30" height="30" align="center">&nbsp;&nbsp;วิภาดา ยะอ้อน</td>
-            <td>รอทำ: 3 งาน</td>
-            <td>กำลังทำ: 2 งาน</td>
-            <td>งานที่เสร็จ(สะสม): 5 งาน</td>
+            <td style="text-align: left;"><img src="img/pro.jpg"; width="30" height="30">&nbsp;&nbsp;วิภาดา ยะอ้อน</td>
+            <td>3 </td>
+            <td>2 </td>
+            <td>5 </td>
         </tr>
     </tbody>
 </table>
@@ -221,6 +247,11 @@
     th, td {
         padding: 10px;
         background: #dff9fb;
+        width: 10px;
+    }
+    td{
+        text-align: center;
+        font-size: 16px;
     }
 </style>
 </div>
