@@ -3,26 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home page</title>
-    <link rel="icon" type="imge/png" href="assets/favicon.png">
+    <title>Smart_WRK</title>
+    <link rel="icon" type="imge/png" href="img/hpt.png">
     <link rel="stylesheet" href="css/font.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
-  <body style="justify-content: center; align-items: center; min-height: 100vh; width: 100%; background-color: #22a6b3;">
-<<<<<<< HEAD
-   
-=======
->>>>>>> 40fb33a1384b2c32ef30061a80dcef611a70bcc6
+  <body style="justify-content: center; align-items: center; min-height: 100vh; width: 100%; background-color: #62caca;">
+
     <div class="row" style="background: #006266; box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);">
-            <div class="col-sm-3 p-3" style="font-size: 20px; color: white;">
-               <a class="navbar-brand" href="#"><img src="img/hpt.png" width="50" height="50"><b> LAMPANG HOSPITAL</b></a>
+            <div class="col-sm-3 p-3" style="font-size: 20px; color: white; ">
+               <a class="navbar-brand" href="home.html" style="margin-left: 15px;"><img src="img/hpt.png" width="50" height="50"><b> LAMPANG HOSPITAL</b></a>
             </div>
-            <div class="nav col-sm-6 p-3" style="align-items: center; font-size: 17.7px; color: white;">
+            <div class="nav col-sm-6 p-3" style="align-items: center; font-size: 17.3px; color: white;">
                 <li class="nav-item">
                     <a class="nav-link text-light" href="home.html"><b>หน้าหลัก</b></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="myjob.html"><b>งานของฉัน</b></a>
+                <li class="dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="javascript:void(0)" class="dropbtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <b>ข้อมูลงาน</b>
+                  </a>
+                  <div class="dropdown-content">
+                    <a class="dropdown-item" href="myjob.html"><b>งานของฉัน</b></a>
+                    <a class="dropdown-item" href="forward.html"><b>รายงานการส่งต่อ</b></a>
+                    <a class="dropdown-item" href="request.html"><b>คำขอที่ยื่นไป</b></a>
+                  </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="signature.html"><b>ลายเซ็นอิเล็กทรอนิกส์</b></a>
@@ -32,8 +36,8 @@
                       <b>ภาระงาน</b>
                   </a>
                   <div class="dropdown-content">
-                    <a class="dropdown-item" href="workload.html"><b>ภาระงานตนเอง</b></a>
-                    <a class="dropdown-item" href="agency.html"><b>ภาระงานในหน่วยงาน</b></a>
+                    <a class="dropdown-item" href="workload.html"><b>ภาระงานภายในหน่วยงาน</b></a>
+                    <a class="dropdown-item" href="agency.html"><b>ภาระงานแยกหน่วยงาน</b></a>
                   </div>
                 </li>
                 <li class="nav-item">
@@ -44,7 +48,7 @@
       <div class="card col-sm-1 p-3" style="background-color: #006266; border: none;">
         <a class="navbar-brand" onclick="menuToggle();"><img src="img/pro.jpg" width="50" height="50" style="position: relative; left: 40px;"></a>
       <div class="menu">
-        <h3>Admin<br><span>งานเทคโนโลยีสารสนเทศ</span></h3>
+        <h3>สุวนันท์ ตันแก้ว<br><span>งานเทคโนโลยีสารสนเทศ</span></h3>
         <ul1>
             <li1><img src="img/frofile.png"><a href="profile.html">แก้ไขข้อมูลส่วนตัว และการตั้งค่า LineNotify</a></li1>
             <li1><img src="img/out.png"><a href="login.html">ออกจากระบบ</a><li></li>
@@ -57,10 +61,10 @@
           toggleMenu.classList.toggle('active')
       }
       </script>
-      <div class="col-sm-2 p-3" style="font-size: 14px; color: white;">
+      <div class="col-sm-2 p-3" style="font-size: 14px; color: white;margin-top: 5px;">
         <div class="row">
             <div class="col-md-12">
-                <b>Admin</b>
+                <b>สุวนันท์ ตันแก้ว</b>
             </div> 
         </div>
         <div class="row">
@@ -155,17 +159,21 @@
       }
       .dropdown-content a:hover {background-color: #01a3a4;}
       .dropdown:hover .dropdown-content {
-       display: block;
+      display: block;
+      }
+      .circled-chevron-right--v1:hover{
+      transform: scale(1.3);
+      z-index: 2;
       }
       </style>
 <!--สร้างคำขอสนับสนุน-->
     <div class="row" style="padding: 0.2cm 0.3cm;">
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" style="text-align: center;">
-            <button type="button" class="btn" style="background-color: #97ff06; box-shadow: 0 3px 5px rgba(0, 0, 0, .3); width: 100%; margin-top: 20px; margin-bottom: 30px;" onclick="document.location = 'EX10.html'"><b>สร้างคำขอสนับสนุน</b></button>
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" style="text-align: center;">
+            <button type="button" class="btn" style="background-color: #95ff00; box-shadow: 0 3px 5px rgba(0, 0, 0, .3); width: 100%; margin-top: 20px; margin-bottom: 30px;" onclick="document.location = 'form.html'"><b>สร้างคำขอสนับสนุน</b></button>
         <div class="row">
           <div class="col-sm-6">
             <div class="main" style="width: 135px; margin: .2rem auto; height: 135px; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
-                <div class="text" style="height: 45px; background: #f0932b; text-align: center; font-size: 15px; padding: 15px 0;">
+                <div class="text" style="height: 45px; background: #e69d4b; text-align: center; font-size: 16px; padding: 15px 0;">
                   <b>งานที่รออยู่</b>
                 </div> 
                 <div class="content" style="text-align: center; padding: 10px 0; font-size: 40px;">
@@ -173,22 +181,22 @@
                 </div>
             </div>
           </div>
-        <div class="col-sm-6">
-          <div class="main" style="width: 135px; margin: .2rem auto; height: 135px; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
-              <div class="text" style="height: 45px; background: #fff200; text-align: center; font-size: 15px; padding: 15px 0;">
-                <b>กำลังทำ</b>
-              </div>
-              <div class="content" style="text-align: center; padding: 10px 0; font-size: 40px;">
-                <b>3</b>
-              </div>
+          <div class="col-sm-6">
+            <div class="main" style="width: 135px; margin: .2rem auto; height: 135px; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
+                <div class="text" style="height: 45px; background: #e7df47; text-align: center; font-size: 16px; padding: 15px 0;">
+                  <b>กำลังทำ</b>
+                </div>
+                <div class="content" style="text-align: center; padding: 10px 0; font-size: 40px;">
+                  <b>3</b>
+                </div>
             </div>
-        </div>
+          </div>
         </div>
 
         <div class="row">
           <div class="col-sm-6">
             <div class="main" style="width: 135px; margin: .2rem auto; height: 135px; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
-                <div class="text" style="height: 45px; background: #6afc54; text-align: center; font-size: 15px; padding: 15px 0;">
+                <div class="text" style="height: 45px; background: #6ee75c; text-align: center; font-size: 16px; padding: 15px 0;">
                   <p><b>เสร็จแล้ว</b>(เดือนนี้)</p>
                 </div>
                 <div class="content" style="text-align: center; padding: 10px 0; font-size: 40px;">
@@ -196,22 +204,22 @@
                 </div>
             </div>
           </div>
-        <div class="col-sm-6">
-            <div class="main" style="width: 135px; margin: .2rem auto; height: 135px; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
-                <div class="text" style="height: 45px; background: #4bcffa; text-align: center; font-size: 15px; padding: 15px 0;">
-                  <b>คำขอที่ยื่นไป</b>
-                </div>
-                <div class="content" style="text-align: center; padding: 10px 0; font-size: 40px;">
-                  <b>2</b>
-                </div>
-            </div>
+          <div class="col-sm-6">
+              <div class="main" style="width: 135px; margin: .2rem auto; height: 135px; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
+                  <div class="text" style="height: 45px; background: #46b2e8; text-align: center; font-size: 16px; padding: 15px 0;">
+                    <b>คำขอที่ยื่นไป</b>
+                  </div>
+                  <div class="content" style="text-align: center; padding: 10px 0; font-size: 40px;">
+                    <b>3</b>
+                  </div>
+              </div>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
 
         <div class="col col-sm-12 col-md-3 col-lg-3">
             <div class="main-input" style="width: 310px; margin: 1.3rem auto; height: 370px; background-color: #f1f2f6; border-radius: 8px; overflow: hidden; float: right;">
-                <div class="text" style="height: 45px; background: #f0932b; text-align: center; font-size: 15px; padding: 15px 0;">
+                <div class="text" style="height: 45px; background: #e69d4b; text-align: center; font-size: 16px; padding: 15px 0;">
                   <b>แสดงงานที่รออยู่</b>
                 </div>
                 <div class="row" style="background: #dfe4ea;">
@@ -221,47 +229,47 @@
                   <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
                       <b>ขอ undo เอกสาร LIS66-1002</b><br>
                       <b>คำขอเมื่อ:</b> 09/01/2023<br>
-                      <b>สถานะ:<a style="color: #EE5A24;"> รอทำ</a></b><br>
+                      <b>สถานะ:<a style="color: #FF7800;"> รอทำ</a></b><br>
                       <b>จาก:</b> กลุ่มงานยุทธศาสตร์และแผนงานโครงการ
                   </div>
                   <div class="col-sm-3">
-                    <img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px; margin-right: 15px;">
-                </div>
+                    <a href="details_1.html"><img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" width="30" height="30" style="margin-top: 25px;"></a>
+                  </div>
                 </div>
             </div>
         </div>
 
         <div class="col col-sm-12 col-md-3 col-lg-3">
             <div class="main-input" style="width: 310px; margin: 1.3rem auto; height: 370px; background-color: #f1f2f6; border-radius: 8px; overflow: hidden; float: right;">
-                <div class="text" style="height: 45px; background: #fff200; text-align: center; font-size: 15px; padding: 15px 0;">
+                <div class="text" style="height: 45px; background: #e7df47; text-align: center; font-size: 16px; padding: 15px 0;">
                   <b>แสดงงานที่กำลังทำ</b>
                 </div>
                 <div class="row" style="background: #dfe4ea;">
                   <div class="col-sm-2">
-                      <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                      <img src="img/Notebook.png" width="50" height="50" style="margin-top: 8px;">
                   </div>
                   <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
                       <b>ขอรายงานเงินได้ เงินหัก ประจำ</b><br>
                       <b>คำขอเมื่อ:</b> 04/01/2023<br>
-                      <b>สถานะ:<a style="color: #fbc531;"> กำลังทำ</a></b><br>
+                      <b>สถานะ:<a style="color: #ffa801;"> กำลังทำ</a></b><br>
                       <b>จาก:</b> กลุ่มงานทรัพยากรบุคคล
                   </div>
                   <div class="col-sm-3">
-                      <img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px;">
+                    <a href="details_2.html"><img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" width="30" height="30" style="margin-top: 17px;"></a>
                   </div>
                 </div>
                 <div class="row" style="background: #f1f2f6;">
                   <div class="col-sm-2">
-                      <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                      <img src="img/Notebook.png" width="50" height="50" style="margin-top: 8px;">
                   </div>
                   <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
                       <b>ขอรายงานการประชุม</b><br>
                       <b>คำขอเมื่อ:</b> 15/01/2023<br>
-                      <b>สถานะ:<a style="color: #fbc531;"> กำลังทำ</a></b><br>
+                      <b>สถานะ:<a style="color: #ffa801;"> กำลังทำ</a></b><br>
                       <b>จาก:</b> กลุ่มงานเทคโนโลยีสารสนเทศ
                   </div>
                   <div class="col-sm-3">
-                      <img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px;">
+                    <a href="details_2.html"><img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" width="30" height="30" style="margin-top: 17px;"></a>
                   </div>
                 </div>
                 <div class="row" style="background: #dfe4ea;">
@@ -271,67 +279,109 @@
                   <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
                     <b>ขอสร้างรายงานการใช้งานโปรแกรม</b><br>
                     <b>คำขอเมื่อ:</b> 05/12/2023<br>
-                    <b>สถานะ:<a style="color: #fbc531;"> กำลังทำ</a></b><br>
+                    <b>สถานะ:<a style="color: #ffa801;"> กำลังทำ</a></b><br>
                     <b>จาก:</b> กลุ่มการพยาบาล
                   </div>
                   <div class="col-sm-3">
-                      <img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px;">
+                    <a href="details_2.html"><img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" width="30" height="30" style="margin-top: 25px;"></a>
                   </div>
-            </div>          
+                </div>   
             </div>
-          </div>     
+        </div>     
 
-        <div class="col col-sm-12 col-md-3 col-lg-3" >
-            <div class="main-input" style="width: 310px; margin: 1.3rem auto; height: 370px; background-color: #f1f2f6; border-radius: 8px; overflow: hidden; float: right;">
-                <div class="text" style="height: 45px; background: #4bcffa; text-align: center; font-size: 15px; padding: 15px 0;">
-                  <b>แสดงข้อมูลคำขอที่ยื่นไป</b>
-                </div>
+        <div class="col col-sm-12 col-md-3 col-lg-3">
+            <div class="main-input" style="width: 310px; margin: 1.3rem auto; height: 370px; background-color: #46b2e8; border-radius: 8px; overflow: hidden; float: right;">
+              <p style="margin-top: 15px; margin-bottom:6px; text-align: center;">
+                <b>แสดงข้อมูลคำขอที่ยื่นไป</b></p>
+            <div class="row" style="background-color: aqua;height: 325px; overflow: auto;">
+                <div class="col">
+                  <div class="row" style="background: #dfe4ea;">
+                    <div class="col-sm-2">
+                        <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                    </div>
+                    <div class="col-sm-8" style="font-size: 12px; line-height: 16px;">
+                        <b>ขอสร้างแบบฟอร์มในโปรแกรม Smart HIS IPD</b><br>
+                        <b>คำขอเมื่อ:</b> 10/12/2023<br>
+                        <b>สถานะ:<a style="color: #00a8ff;"> คำขอที่ยื่นไป</a></b><br>
+                        <b>จาก:</b> กลุ่มการพยาบาล
+                    </div>
+                    <div class="col-sm-2">
+                      <a href="edit.html"><img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" width="30" height="30" style="margin-top: 25px;"></a>
+                    </div>
+                  </div>
+                  <div class="row" style="background: #f1f2f6;">
+                    <div class="col-sm-2">
+                        <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                    </div>
+                    <div class="col-sm-8" style="font-size: 12px; line-height: 16px;">
+                        <b>แจ้งประกาศในเว็บไซต์ของโรงพยาบาลลำปาง</b><br>
+                        <b>คำขอเมื่อ:</b> 22/12/2023<br>
+                        <b>สถานะ:<a style="color: #00a8ff;"> คำขอที่ยื่นไป</a></b><br>
+                        <b>จาก:</b> กลุ่มการพยาบาล
+                    </div>
+                    <div class="col-sm-2">
+                      <a href="edit.html"><img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" width="30" height="30" style="margin-top: 25px;"></a>
+                    </div>
+                  </div>
+                  <div class="row" style="background: #dfe4ea;">
+                    <div class="col-sm-2">
+                        <img src="img/Notebook.png" width="50" height="50" style="margin-top: 27px;">
+                    </div>
+                    <div class="col-sm-8" style="font-size: 12px; line-height: 16px;">
+                        <b>ประชาสัมพันธ์ข้อมูลผ่านระบบ Internet/Intranet โดยผู้ขอรับการสนับสนุนยินยอมให้เปิดเผยข้อมูลดังกล่าวต่อสาธารณชนได้</b><br>
+                        <b>คำขอเมื่อ:</b> 25/01/2024<br>
+                        <b>สถานะ:<a style="color: #00a8ff;"> คำขอที่ยื่นไป</a></b><br>
+                        <b>จาก:</b>กลุ่มงานพยาธิวิทยากายวิภาค
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="edit.html"><img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" width="30" height="30" style="margin-top: 37px;"></a>
+                    </div>
+                  </div>
+                  <div class="row" style="background: #f0f3ff;">
+                    <div class="col-sm-2">
+                        <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                    </div>
+                    <div class="col-sm-8" style="font-size: 12px; line-height: 16px;">
+                        <b>ประชาสัมพันธ์การผ่าตัดรักษาโรคมะเร็งลำไส้ใหญ่</b><br>
+                        <b>คำขอเมื่อ:</b> 01/02/2024<br>
+                        <b>สถานะ:<a style="color: #00a8ff;"> คำขอที่ยื่นไป</a></b><br>
+                        <b>จาก:</b>กลุ่มการพยาบาล
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="edit.html"><img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" width="30" height="30" style="margin-top: 19px;"></a>
+                    </div>
+                  </div>
                 <div class="row" style="background: #dfe4ea;">
-                  <div class="col-sm-2">
-                      <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
-                  </div>
-                  <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
-                      <b>ขอสร้างแบบฟอร์มในโปรแกรม Smart HIS IPD</b><br>
-                      <b>คำขอเมื่อ:</b> 10/12/2023<br>
-                      <b>สถานะ:<a style="color: #4bcffa;"> คำขอที่ยื่นไป</a></b><br>
-                      <b>จาก:</b> กลุ่มการพยาบาล
-                  </div>
-                  <div class="col-sm-3">
-                      <img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px;">
-                  </div>
-              </div>
-              <div class="row" style="background: #f1f2f6;">
-                  <div class="col-sm-2">
-                      <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
-                  </div>
-                  <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
-                      <b>แจ้งประกาศในเว็บไซต์ของโรงพยาบาลลำปาง</b><br>
-                      <b>คำขอเมื่อ:</b> 22/12/2023<br>
-                      <b>สถานะ:<a style="color: #4bcffa;"> คำขอที่ยื่นไป</a></b><br>
-                      <b>จาก:</b> กลุ่มการพยาบาล
-                  </div>
-                  <div class="col-sm-3">
-                      <img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px;">
-                  </div>
-              </div>
-              <div class="row" style="background: #dfe4ea;">
-                <div class="col-sm-2">
-                    <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                    <div class="col-sm-2">
+                        <img src="img/Notebook.png" width="50" height="50" style="margin-top: 9px;">
+                    </div>
+                    <div class="col-sm-8" style="font-size: 12px; line-height: 16px;">
+                        <b>โครงการผ่าตัดต้อกระจกในผู้สูงอายุ</b><br>
+                        <b>คำขอเมื่อ:</b> 01/02/2024<br>
+                        <b>สถานะ:<a style="color: #00a8ff;"> คำขอที่ยื่นไป</a></b><br>
+                        <b>จาก:</b>กลุ่มการพยาบาล
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="edit.html"><img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" width="30" height="30" style="margin-top: 19px;"></a>
+                    </div>
                 </div>
-                <div class="col-sm-7" style="font-size: 12px; line-height: 16px;">
-                    <b>ประชาสัมพันธ์ข้อมูลผ่านระบบ Internet/Intranet โดยผู้ขอรับการสนับสนุนยินยอมให้เปิดเผยข้อมูลดังกล่าวต่อสาธารณชนได้</b><br>
-                    <b>คำขอเมื่อ:</b> 25/01/2024<br>
-                    <b>สถานะ:<a style="color: #4bcffa;"> คำขอที่ยื่นไป</a></b><br>
-                    <b>จาก:</b>กลุ่มงานพยาธิวิทยากายวิภาค
+                <div class="row" style="background: #f0f3ff;">
+                    <div class="col-sm-2">
+                        <img src="img/Notebook.png" width="50" height="50" style="margin-top: 15px;">
+                    </div>
+                    <div class="col-sm-8" style="font-size: 12px;">
+                        <b>โครงการพัฒนาระบบการดูแลผู้ป่วยศัลยกรรมหลอดเลือด</b><br>
+                        <b>คำขอเมื่อ:</b> 02/02/2024<br>
+                        <b>สถานะ:<a style="color: #00a8ff;"> คำขอที่ยื่นไป</a></b><br>
+                        <b>จาก:</b>กลุ่มการพยาบาล
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="edit.html"><img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" class="circled-chevron-right--v1" width="30" height="30" style="margin-top: 19px;"></a>
+                    </div>
                 </div>
-                <div class="col-sm-3">
-                    <a href="EX9.html"><img src="https://img.icons8.com/ios/50/circled-chevron-right--v1.png" width="30" height="30" style="margin-top: 17px;"></a>
-                </div>
-            </div>
 
             </div>
         </div>
-
     </div>
 
 

@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    2222
-  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart_WRK</title>
+  <link rel="icon" type="imge/png" href="img/hpt.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <title>Agency</title>
-    <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/font.css">
 </head>
-<body style="background-color: #22a6b3;">
+<body style="background-color: #62caca;">
   <div class="row" style="background: #006266; box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);">
     <div class="col-sm-3 p-3" style="font-size: 20px; color: white;">
-       <a class="navbar-brand" href="#"><img src="img/hpt.png" width="50" height="50"><b> LAMPANG HOSPITAL</b></a>
+       <a class="navbar-brand" href="home.html" style="margin-left: 15px;"><img src="img/hpt.png" width="50" height="50"><b> LAMPANG HOSPITAL</b></a>
     </div>
-    <div class="nav col-sm-6 p-3" style="align-items: center; font-size: 17.7px; color: white;">
+    <div class="nav col-sm-6 p-3" style="align-items: center; font-size: 17.3px; color: white;">
         <li class="nav-item">
-            <a class="nav-link text-light" href="#"><b>หน้าหลัก</b></a>
+            <a class="nav-link text-light" href="home.html"><b>หน้าหลัก</b></a>
         </li>
+        <li class="dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="javascript:void(0)" class="dropbtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <b>ข้อมูลงาน</b>
+            </a>
+            <div class="dropdown-content">
+              <a class="dropdown-item" href="myjob.html"><b>งานของฉัน</b></a>
+              <a class="dropdown-item" href="forward.html"><b>รายงานการส่งต่อ</b></a>
+              <a class="dropdown-item" href="request.html"><b>คำขอที่ยื่นไป</b></a>
+            </div>
+          </li>
         <li class="nav-item">
-            <a class="nav-link text-light" href="#"><b>งานของฉัน</b></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-light" href="#"><b>ลายเซ็นอิเล็กทรอนิกส์</b></a>
+            <a class="nav-link text-light" href="signature.html"><b>ลายเซ็นอิเล็กทรอนิกส์</b></a>
         </li>
         <li class="dropdown">
           <a class="nav-link dropdown-toggle text-light" href="javascript:void(0)" class="dropbtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <b>ภาระงาน</b>
           </a>
           <div class="dropdown-content">
-            <a class="dropdown-item" href="#"><b>ภายในหน่วยงาน</b></a>
-            <a class="dropdown-item" href="#"><b>แยกหน่วยงาน</b></a>
+            <a class="dropdown-item" href="workload.html"><b>ภาระงานภายในหน่วยงาน</b></a>
+            <a class="dropdown-item" href="agency.html"><b>ภาระงานแยกหน่วยงาน</b></a>
           </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-light" href="#"><b>รายงาน</b></a>
+            <a class="nav-link text-light" href="report.html"><b>รายงาน</b></a>
         </li>
     </div>
 <!--รูปโปรไฟล์-->            
     <div class="card col-sm-1 p-3" style="background-color: #006266; border: none;">
       <a class="navbar-brand" onclick="menuToggle();"><img src="img/pro.jpg" width="50" height="50" style="position: relative; left: 40px;"></a>
   <div class="menu">
-      <h3>Admin<br><span>งานเทคโนโลยีสารสนเทศ</span></h3>
+      <h3>สุวนันท์ ตันแก้ว<br><span>งานเทคโนโลยีสารสนเทศ</span></h3>
       <ul1>
           <li1><img src="img/frofile.png"><a href="profile.html">แก้ไขข้อมูลส่วนตัว และการตั้งค่า LineNotify</a></li1>
           <li1><img src="img/out.png"><a href="login.html">ออกจากระบบ</a><li></li>
@@ -54,10 +60,10 @@
       toggleMenu.classList.toggle('active')
   }
   </script>
-  <div class="col-sm-2 p-3" style="font-size: 14px; color: white;">
+  <div class="col-sm-2 p-3" style="font-size: 14px; color: white;margin-top: 5px;">
       <div class="row">
           <div class="col-md-12">
-              <b>Admin</b>
+              <b>สุวนันท์ ตันแก้ว</b>
           </div> 
       </div>
       <div class="row">
@@ -154,30 +160,28 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-.circled-chevron-right--v1:hover{
-     
-     transform: scale(1.3);
-     z-index: 2;
-     
-     
-}
+        .circled-chevron-right--v1:hover{
+            
+            transform: scale(1.3);
+            z-index: 2;
+        }
 </style>
 <div class="row" style="height: 100%; margin-top: 25px;">
     <div class="col col-sm-12 col-md-4 col-lg-4" style="text-align: right;">
         <b for="inputState" class="form-label" style="font-size: 16px;">วันที่</b>
-        <input type="date" style="width: 50%; height: 35px; margin-left: 10px; border: 0; border-radius: 0.2em;">
+        <input type="date" style="width: 60%; height: 35px; margin-left: 10px; border: 0; border-radius: 0.2em; padding: 10px;">
     </div>
     <div class="col col-sm-12 col-md-4 col-lg-4" style="text-align: center">
         <b for="inputState" class="form-label" style="font-size: 16px;">ถึงวันที่</b>
-        <input type="date" style="width: 50%; height: 35px; margin-left: 10px; border: 0; border-radius: 0.2em;">
+        <input type="date" style="width: 60%; height: 35px; margin-left: 10px; border: 0; border-radius: 0.2em; padding: 10px;">
     </div>
     <div class="col col-sm-12 col-md-4 col-lg-4">
-        <button type="button" class="btn" style="width: 50%; height: 35px; background-color: #97ff06; box-shadow: 0 3px 5px rgba(0, 0, 0, .3);"><b>ค้นหาข้อมูล</b></button>
+        <button type="button" class="btn" style="width: 50%; height: 35px; background-color: #281e98;color: #ffffff; box-shadow: 0 3px 5px rgba(0, 0, 0, .3);"><b>ค้นหาข้อมูล</b></button>
     </div>
 </div>
 <div class="row" style="height: 100vh;">
     <div class="col-sm-4">
-        <div class="row" style="margin-top: 10px;">
+        <div class="bgtd row" style="margin-top: 10px;">
           <table style="width: 80%; margin: auto;">
           <tr>
             <td  style="background-color: #1B1464;color: #ffffff; text-align: center;" ><b>หน่วยงาน</b></td>
@@ -214,10 +218,10 @@
     <tbody>
         <thead>
             <tr>
-                <th colspan="1" style="text-align: center; background-color: #6254ff; color: #000;">รายชื่อเจ้าหน้าที่</th>
-                <th colspan="1" style="text-align: center; background-color: #f0932b; color: #000;">รอทำ</th>
-                <th colspan="1" style="text-align: center; background-color: #fff200; color: #000;">กำลังทำ</th>
-                <th colspan="1" style="text-align: center; background-color: #6afc54; color: #000;">เสร็จแล้ว</th>
+                <th colspan="1" style="text-align: center; background-color: #a089fe; color: #000;">รายชื่อเจ้าหน้าที่</th>
+                <th colspan="1" style="text-align: center; background-color: #e69d4b; color: #000;">รอทำ</th>
+                <th colspan="1" style="text-align: center; background-color: #e7df47; color: #000;">กำลังทำ</th>
+                <th colspan="1" style="text-align: center; background-color: #6ee75c; color: #000;">เสร็จแล้ว</th>
             </tr>
         </thead>
         <tr>
@@ -243,12 +247,15 @@
 
 <style>
     table, th, td {
-        border: 2px solid #22a6b3; 
+        border: 1.4px solid #62caca; 
     }
     th, td {
         padding: 10px;
-        background: #dff9fb;
+        background: #f1feff;
         width: 10px;
+    }
+    .bgtd td:hover {
+        background: #ffeed0;
     }
     td{
         text-align: center;

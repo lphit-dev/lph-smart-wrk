@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart_WRK</title>
+    <link rel="icon" type="imge/png" href="img/hpt.png">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body>
+    <form action="login.html" class="box">
+        <div class="row">
+            <div class="col" style="font-size: 23.7px;color: #000000;">
+                <b>ระบบบริหารจัดการงานเจ้าหน้าที่</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img/hpt.png" width="120" height="120" style="margin-top: 10px;margin-bottom: 10px;">
+            </div>
+        </div>
+        <!--Username-->
+        <div class="login-form">
+            <i class="fas fa-user" id="logo-input"></i>
+            <input type="text" class="input" id="username">
+            <span data-placeholder="Username"></span>
+        </div>
+        <!--Password-->
+        <div class="login-form">
+            <i class="fas fa-lock" id="logo-input"></i>
+            <input type="password" class="input" id="password">
+            <span data-placeholder="Password"></span>
+        </div>
+        <!--Check-->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Remember Me
+            </label>
+        </div>
+        <input type="submit" class="btn-submit" value="LOGIN" onclick="javascript:window.location='home.html';">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".input").on("focus",function(){
+                $(this).addClass("focus");
+            });         
+
+            $("input").on("blur",function(){
+                if($(this).val()=="")
+                     $(this).removeClass("focus");
+
+                if($("#username").val() != "" && $("#password").val() != "")
+                    $("#logo").addClass("change-color");
+                else
+                    $("#logo").removeClass("change-color"); 
+            });
+        });
+    </script>
+<!--css-->
+<style>
+    body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(125deg,#f6e8b9,#81ecec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.box {
+    position: relative;
+    height: 470px;
+    width: 400px;
+    background-image: linear-gradient(90deg,#dfe4ea,#dfe4ea);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-form {
+    position: relative;
+    height: 55px;	
+    width: 100%;
+    background: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.login-form span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #a4b0be;
+    transition: .5s;
+    opacity: 1;
+    font-size: 18px;
+}
+#logo-input {
+    margin: 0 20px;
+    padding-right: 20px;
+    font-size: 1.5rem;
+    border-right: 2px solid #0c0c0c;
+    color: #000000;
+}
+.input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    background: transparent;
+    z-index: 1;
+    color: rgb(27, 27, 27);
+}
+.btn-submit {
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(120deg,#7bed9f,#2ed573,#7bed9f);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+    font-weight: 700;
+}
+.form-check{
+    height: 25px;
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    background: transparent;
+    z-index: 1;
+    color: #3f4141;
+    text-align: center;
+    accent-color: blue;
+}
+.btn-submit:hover {
+    background-position: right;
+}
+.focus + span::before {
+    opacity: 0;
+}
+.change-color {
+    color: #f1c514 !important;
+}
+</style>
+</body>
+</html>

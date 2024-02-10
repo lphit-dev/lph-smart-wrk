@@ -5,9 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Smart_WRK</title>
     <link rel="icon" type="imge/png" href="img/hpt.png">
+    <link rel="stylesheet" href="css/font.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!--css-->
+    <style>
+      .model-container1 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          width: 100vw;
+          position: fixed;
+          top: 0; left: 0;
+          background: rgba(0, 0, 0, .3);
+          transform: scale(0);
+      }
+      .model-container1 .model1 {
+          height: 350px;
+          width: 450px;
+          margin: 0 10px;
+          padding: 20px;
+          background: #ffffff;
+          border-radius: 5px;
+          text-align: center;
+          position: relative;
+      }
+      .model-container1 .model1 p {
+          color:  #000000;
+          font-size: 20px;
+          margin-top: 15px; 
+          margin-bottom: 25px;
+      }
+      .model-container1 .model1 button {
+          height: 35px;
+          width: 120px;
+          top: 15px;
+          color: #ffffff;
+          border: 0;
+          border-radius: 0.4em;
+          font-size: 16px;
+          cursor: pointer;
+          box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+      }
+      .from-control1{
+          width: 200px;
+          padding: 5px;
+          margin: 0;
+      }
+      .from-control2{
+          width: 200px;
+          padding: 5px;
+          margin: 0;
+      }
+      .username{
+          margin-top: 50px;
+          margin-right: 40px;
+      }
+      .password{
+          margin-top: 10px;
+          margin-right: 35px;
+      }
+      .btns {
+          margin-top: 40px;
+          margin-left: 20px;
+      }
+      .model-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          width: 100%;
+          position: fixed;
+          top: 0; left: 0;
+          background: rgba(0, 0, 0, 0.3);
+          transform: scale(0);
+      }
+      .model-container .model {
+          width: 450px;
+          height: 350px;
+          background: #ffffff;
+          border-radius: 5px;
+      }
+      .header {
+          height: 60px;
+          font-size: 24px;
+          color: #ffffff;
+          background: #22a6b3;
+          text-align: center;
+          overflow: hidden;
+          border-radius: 3px 3px 0 0;
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+      }
+      .model-container .model p {
+          color: #ffffff;
+          font-size: 24px;
+          margin-top: 15px; 
+          text-align: center;
+      }
+      .status .form-select {
+          width: 300px;
+          height: 30px;
+          margin-left: 20px;
+      }
+      .status .form-label {
+          font-size: 16px;
+          color: #000000;
+          margin-left: 20px;
+      }
+      .officer .form-select {
+          width: 300px;
+          height: 30px;
+          margin-left: 20px;
+          margin-top: 20px;
+      }
+      .officer .form-label {
+          font-size: 16px;
+          color: #000000;
+          margin-left: 20px;
+      }
+      .buttons {
+          display: flex;
+          padding: 0 20px;
+          float: right;
+          grid-column-gap: 5px;
+      }
+      .btn {
+          height: 40px;
+          border-radius: 0.4em;
+          font-size: 16px;
+      }
+      .btns1 {
+          height: 40px;
+          width: 100px;
+          margin-top: 20px;
+          border: 0;
+          border-radius: 0.4em;
+          font-size: 16px;
+          color: #ffffff;
+          box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+      }
+</style>
   </head>
-  <body style="background-color: #0ed2d2;">
+  <body style="background-color: #62caca;">
 <!--head-->
 <div class="row" style="background: #006266; box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);">
   <div class="col-sm-9 p-3" style="font-size: 20px; color: white;">
@@ -36,7 +175,7 @@ function menuToggle(){
 <div class="col-sm-2 p-3" style="font-size: 14px; color: white;margin-top: 5px;">
     <div class="row">
         <div class="col-md-12">
-            <b>สุวนันท์ ตันแก้ว</b>
+            <b>สุวนันท์</b>
         </div> 
     </div>
     <div class="row">
@@ -105,8 +244,8 @@ function menuToggle(){
   }
 </style>
 <!--แบบฟอร์ม-->
-<div class="row" style="margin-top: 20px;margin-bottom: 20px; margin-left: 10%;">
-  <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8" style="background-color: #ffffff;width: 90%; height: 100%;">
+<div class="row" style="margin-top: 20px; margin-left: 20px;">
+  <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8" style="background-color: #ffffff; height: 100vh; overflow: auto;">
     <div class="row">
       <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
         <br><img src="img/hpt lp.png" width="190" height="65">
@@ -262,8 +401,20 @@ function menuToggle(){
         </div>
       </div>
     </div>
-  </div>
+</div>
 
-<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script-->
-</body>
+<!--ส่งต่อคำขอ-->
+  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" style="background-color: #62caca;">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <button type="button" class="btn" style="background-color: #ffe589; width: 80%; color: #000000;margin-left: 35px;margin-top: 5px; box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);"
+          onclick="document.location = 'edit.html'">
+          <b>ขอยกเลิกคำขอ</b></button>
+      </div>
+    </div>
+  </div>
+    
+
+    <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script-->
+  </body>
 </html>

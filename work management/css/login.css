@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(125deg,#f6e8b9,#81ecec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.box {
+    position: relative;
+    height: 450px;
+    width: 400px;
+    background-image: linear-gradient(90deg,#dfe4ea,#dfe4ea);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in {
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    height: 60px;
+    width: 200px;
+    background: #9f93ef;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.logo {
+    font-size: 9rem;
+    color: #5237ff;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+.login-form {
+    position: relative;
+    height: 80px;	
+    width: 100%;
+    background: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.login-form span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #a4b0be;
+    transition: .5s;
+    opacity: 1;
+    font-size: 18px;
+}
+#logo-input {
+    margin: 0 20px;
+    padding-right: 20px;
+    font-size: 1.5rem;
+    border-right: 2px solid #0c0c0c;
+    color: #0984e3;
+}
+.input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    background: transparent;
+    z-index: 1;
+    color: rgb(27, 27, 27);
+}
+.btn-submit {
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(120deg,#7bed9f,#2ed573,#7bed9f);
+    background-size: 200%;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+    font-weight: 700;
+}
+.form-check{
+    height: 25px;
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    background: transparent;
+    z-index: 1;
+    color: #3f4141;
+    text-align: center;
+    accent-color: blue;
+}
+.btn-submit:hover {
+    background-position: right;
+}
+.focus + span::before {
+    opacity: 0;
+}
+.change-color {
+    color: #f1c514 !important;
+}
